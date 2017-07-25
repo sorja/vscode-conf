@@ -36,16 +36,20 @@
     },
     {
         "key": "cmd+j",
-        "command": "editor.action.joinLines",
-        "when": "editorTextFocus"
+        "command":"editor.action.joinLines",
+        "when":"editorTextFocus"
     },
     {
         "key": "cmd+k cmd+l",
         "command": "editor.action.transformToLowercase",
         "when": "editorTextFocus"
-    }, {
+    },{
         "key": "cmd+k cmd+o",
         "command": "editor.action.transformToUppercase",
         "when": "editorTextFocus"
-    }
-]
+    },
+{
+    "key": "shift+alt+d",
+    "command": "deleteWordEndLeft",
+    "when": "editorTextFocus"
+}]

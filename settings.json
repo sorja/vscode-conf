@@ -1,6 +1,11 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "editor.quickSuggestionsDelay": 3000,
     "editor.snippetSuggestions": "top",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.suggestFontSize": 9,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
