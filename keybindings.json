@@ -1,23 +1,26 @@
 // Place your key bindings in this file to overwrite the defaults
-[
-    {
+[{
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor",
         "when": "editorTextFocus"
-    },{
+    }, {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.previousEditor",
         "when": "editorTextFocus"
-    },{
+    }, {
         "key": "cmd+,",
         "command": "eslint.executeAutofix",
         "when": "editorTextFocus"
-    },{
+    }, {
         "key": "shift+cmd+k shift+cmd+o",
         "command": "workbench.files.action.collapseExplorerFolders",
         "when": ""
-    },{
+    }, {
         "key": "f1",
+        "command": "workbench.action.toggleZenMode",
+        "when": ""
+    }, {
+        "key": "f2",
         "command": "workbench.action.maximizeEditor",
         "when": ""
     },
@@ -33,14 +36,14 @@
     },
     {
         "key": "cmd+j",
-        "command":"editor.action.joinLines",
-        "when":"editorTextFocus"
+        "command": "editor.action.joinLines",
+        "when": "editorTextFocus"
     },
     {
         "key": "cmd+k cmd+l",
         "command": "editor.action.transformToLowercase",
         "when": "editorTextFocus"
-    },{
+    }, {
         "key": "cmd+k cmd+o",
         "command": "editor.action.transformToUppercase",
         "when": "editorTextFocus"
