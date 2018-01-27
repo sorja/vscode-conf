@@ -16,6 +16,10 @@
         "command": "workbench.files.action.collapseExplorerFolders",
         "when": ""
     }, {
+        "key": "shift+cmd+k shift+cmd+o",
+        "command": "search.action.collapseSearchResults",
+        "when": ""
+    }, {
         "key": "f1",
         "command": "workbench.action.toggleZenMode",
         "when": ""

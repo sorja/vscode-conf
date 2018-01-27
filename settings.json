@@ -33,11 +33,25 @@
     },
     "editor.find.seedSearchStringFromSelection": true,
     "editor.find.autoFindInSelection": true,
-    "workbench.colorTheme": "Quiet Light",
     "emmet.includeLanguages": {
-        "javascriptreact": true
+        // "javascriptreact": true
+        "javascript": "javascriptreact"
     },
+    "emmet.triggerExpansionOnTab": true,
     "zenMode.fullScreen": false,
     "editor.minimap.enabled": false,
     "editor.hideCursorInOverviewRuler": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.iconTheme": "vscode-icons",
 }
