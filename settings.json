@@ -11,7 +11,10 @@
         "**/dist": true,
         "**/*.min": true,
         "**/node_modules": true,
-        "**/bower_components": true
+        "**/bower_components": true,
+        "**/*.pyc": true,
+        "**/*.bak": true,
+        "**/__pycache__": true
 
     },
     "search.useRipgrep": true,
@@ -35,4 +38,11 @@
     "zenMode.fullScreen": false,
     "editor.minimap.enabled": false,
     "editor.hideCursorInOverviewRuler": true,
+    "workbench.sideBar.location": "left",
+
+    // Python
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    "editor.scrollbar.verticalScrollbarSize": 0
 }
