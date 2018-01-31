@@ -1,6 +1,11 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "editor.quickSuggestionsDelay": 3000,
     "editor.snippetSuggestions": "top",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.suggestFontSize": 9,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -15,7 +20,6 @@
         "**/*.pyc": true,
         "**/*.bak": true,
         "**/__pycache__": true
-
     },
     "search.useRipgrep": true,
     "window.zoomLevel": 0,
@@ -31,18 +35,31 @@
     },
     "editor.find.seedSearchStringFromSelection": true,
     "editor.find.autoFindInSelection": true,
-    "workbench.colorTheme": "Quiet Light",
     "emmet.includeLanguages": {
-        "javascriptreact": true
+        // "javascriptreact": true
+        "javascript": "javascriptreact"
     },
+    "emmet.triggerExpansionOnTab": true,
     "zenMode.fullScreen": false,
     "editor.minimap.enabled": false,
     "editor.hideCursorInOverviewRuler": true,
     "workbench.sideBar.location": "left",
-
     // Python
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
-    "editor.scrollbar.verticalScrollbarSize": 0
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.iconTheme": "vscode-icons",
 }
