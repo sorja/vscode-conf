@@ -1,12 +1,5 @@
+// Place your key bindings in this file to overwrite the defaults
 [
-    {
-        "key": "f4",
-        "command": "outline.focus"
-    },
-    {
-        "key": "f2",
-        "command": "workbench.action.maximizeEditor"
-    },
     {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditorInGroup"
@@ -16,18 +9,104 @@
         "command": "workbench.action.previousEditorInGroup"
     },
     {
+        "key": "cmd+, cmd+.",
+        "command": "eslint.executeAutofix",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+, cmd+,",
+        "command": "workbench.action.openSettings"
+    },
+    {
+        "key": "cmd+. cmd+.",
+        "command": "workbench.action.openGlobalKeybindingsFile"
+    },
+    {
+        "key": "shift+cmd+k shift+cmd+o",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "explorerViewletVisible"
+    },
+    {
+        "key": "shift+cmd+k shift+cmd+o",
+        "command": "search.action.collapseSearchResults",
+        "when": "searchViewletVisible"
+    },
+    {
         "key": "f1",
         "command": "workbench.action.toggleZenMode"
     },
     {
-        "key": "shift+cmd+k",
-        "command": "-editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
+        "key": "f2",
+        "command": "workbench.action.maximizeEditor"
+    },
+    {
+        "key": "f4",
+        "command": "outline.focus"
+    },
+    {
+        "key": "f4",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "outlineFocused"
+    },
+    {
+        "key": "shift+cmd+, shift+cmd+.",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+, shift+cmd+.",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+j",
+        "command": "editor.action.joinLines",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "toggleSuggestionDetails",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+o",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+d",
+        "command": "deleteWordEndLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
     },
     {
         "key": "alt+b",
         "command": "cursorWordLeft",
         "when": "terminalFocus"
+    },
+    {
+        "key": "alt+f",
+        "command": "cursorWordRight",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "toggleSuggestionDetails",
+        "when": "editorTextFocus && suggestWidgetVisible"
     },
     {
         "key": "alt+f",
@@ -54,79 +133,10 @@
         "command": "cursorWordPartStartLeftSelect",
         "when": "textInputFocus"
     },
+    // Cancelled key bindings
     {
-        "key": "alt+f",
-        "command": "cursorWordRight",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "shift+alt+d",
-        "command": "deleteWordEndLeft",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+j",
-        "command": "editor.action.joinLines",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+k cmd+l",
-        "command": "editor.action.transformToLowercase",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+k cmd+o",
-        "command": "editor.action.transformToUppercase",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+'",
-        "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+,",
-        "command": "eslint.executeAutofix",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+cmd+k shift+cmd+o",
-        "command": "search.action.collapseSearchResults",
-        "when": "searchViewletVisible"
-    },
-    {
-        "key": "ctrl+'",
-        "command": "toggleSuggestionDetails",
-        "when": "editorTextFocus && suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+shift+space",
-        "command": "toggleSuggestionDetails",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "f4",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "outlineFocused"
-    },
-    {
-        "key": "shift+cmd+, shift+cmd+.",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "shift+cmd+, shift+cmd+.",
-        "command": "workbench.action.terminal.focus",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+w",
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "shift+cmd+k shift+cmd+o",
-        "command": "workbench.files.action.collapseExplorerFolders",
-        "when": "explorerViewletVisible"
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
     }
 ]
