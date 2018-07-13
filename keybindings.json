@@ -37,7 +37,21 @@
     },
     {
         "key": "f2",
+        "command": "workbench.action.editorLayoutTwoColumns"
+    },
+    {
+        "key": "shift+f2",
         "command": "workbench.action.maximizeEditor"
+    },
+    {
+        "key": "f2",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "f2",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "problemFocus"
     },
     {
         "key": "f4",
@@ -116,7 +130,12 @@
     {
         "key": "alt+shift+f",
         "command": "cursorWordPartRightSelect",
-        "when": "textInputFocus"
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+ctrl+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus"
     },
     {
         "key": "alt+b",
@@ -138,5 +157,5 @@
         "key": "shift+cmd+k",
         "command": "-editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
-    }
+    },
 ]

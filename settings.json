@@ -74,6 +74,7 @@
     "python.linting.enabledWithoutWorkspace": false,
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "search.useRipgrep": true,
+    "searchRipgrep.enable": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.confirmOnExit": true,
@@ -82,13 +83,17 @@
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.experimentalTextureCachingStrategy": "dynamic",
     "terminal.integrated.scrollback": 15000,
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.togglePanel",
+        "workbench.action.toggleMaximizedPanel"
+    ],
     "terminal.integrated.shellArgs.linux": [
         "-l"
     ],
     "vsicons.dontShowNewVersionMessage": true,
     "vsicons.presets.tsOfficial": true,
     "window.title": "${activeEditorShort}${separator} ${${appName}} ${separator}${activeEditorLong}",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "workbench.activityBar.visible": false,
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#220815",
@@ -112,5 +117,9 @@
     "files.insertFinalNewline": true,
     "files.maxMemoryForLargeFilesMB": 8192,
     "zenMode.centerLayout": false,
-    "sync.lastUpload": "2018-07-13T13:08:58.685Z",
+    "sync.lastUpload": "2018-07-13T19:34:52.093Z",
+    "terminal.integrated.rendererType": "dom",
+    "editor.letterSpacing": -1,
+    "sync.host": "",
+    "sync.pathPrefix": "",
 }
